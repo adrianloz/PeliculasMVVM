@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">PeliculasMVVM</string>
+    <string name="str_cargando_por_favor_espere">Cargando por favor espere...</string>
+</resources>
