@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">PeliculasMVVM</string>
     <string name="str_cargando_por_favor_espere">Cargando por favor espere...</string>
+    <string name="str_playing_now">Playing Now</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

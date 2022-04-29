@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".controller.principal.detalles.DetallesFragment">
+
+    <LinearLayout
+        android:id="@+id/layoutImagen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.MaterialComponents.Light"
+            app:cardPreventCornerOverlap="false">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imagenPelicula"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:background="@color/teal_200"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.Card.Media" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:alpha="0.8">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:background="@drawable/ic_baseline_arrow_back_ios_new_24"
+            android:layout_gravity="center"/>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/botonPlay"
+        android:layout_below="@+id/layoutImagen"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-45dp"
+        android:layout_marginEnd="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@color/gris"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/ic_play_circle"
+            android:backgroundTint="@color/red" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutDescipcionPelicula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/botonPlay"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/nombrePelicula"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:text="Texto Pelicula"
+            android:textColor="@color/black"
+            android:layout_marginStart="30dp"/>
+        <RatingBar
+            android:scaleX="0.4"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+</RelativeLayout>
