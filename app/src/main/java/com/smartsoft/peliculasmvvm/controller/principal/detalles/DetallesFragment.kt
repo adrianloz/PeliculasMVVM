@@ -21,12 +21,20 @@ class DetallesFragment : Fragment() {
     ): View? {
         binding = FragmentDetallesBinding.inflate(inflater,container, false)
         result = DetallesFragmentArgs.fromBundle(requireArguments()).result
-        Log.e("result", result.toString())
         // Inflate the layout for this fragment
+        initView(result)
+        return binding.root
+    }
 
+    private fun initView(result: Result) {
         loadImage(activity, result.poster_path!!,binding.imagenPelicula)
         binding.nombrePelicula.text = result.title
-        return binding.root
+        binding.descripcionPelicula.text = result.overview
+        binding.review.text = "(" + result.vote_count + " Review" + ")"
+        binding.valoracion.text = result.vote_average.toString()
+        binding.botonRegresar.setOnClickListener {
+            closeFragment()
+        }
     }
 
 

@@ -36,36 +36,39 @@
         </com.google.android.material.card.MaterialCardView>
 
     </LinearLayout>
+
     <androidx.cardview.widget.CardView
+        android:id="@+id/botonRegresar"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        app:cardCornerRadius="10dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        android:alpha="0.8">
+        android:alpha="0.8"
+        app:cardCornerRadius="10dp">
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/black"
+            android:layout_gravity="center"
             android:background="@drawable/ic_baseline_arrow_back_ios_new_24"
-            android:layout_gravity="center"/>
+            android:backgroundTint="@color/black" />
     </androidx.cardview.widget.CardView>
 
     <RelativeLayout
         android:id="@+id/botonPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/layoutImagen"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="-45dp"
-        android:layout_marginEnd="30dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_marginEnd="30dp">
 
-    <View
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:background="@color/gris"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"/>
+        <View
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@color/gris" />
 
         <ImageView
             android:layout_width="100dp"
@@ -79,20 +82,59 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/botonPlay"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:orientation="vertical">
+
         <TextView
             android:id="@+id/nombrePelicula"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textSize="30sp"
             android:text="Texto Pelicula"
             android:textColor="@color/black"
-            android:layout_marginStart="30dp"/>
-        <RatingBar
-            android:scaleX="0.4"
-            android:layout_width="250dp"
-            android:layout_height="match_parent"/>
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_star"
+                app:tint="@color/amarillo" />
+
+            <TextView
+                android:id="@+id/valoracion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="4.9"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/review"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="4dp"
+                android:text="(2454 Reviews)"
+                android:textColor="@color/gris_oscuro"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/descripcionPelicula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="n his second year of fighting crime, Batman uncovers corruption in Gotham City that connects to his own family while facing a serial killer known as the Riddler."
+            android:textColor="@color/black"
+            android:textSize="18sp" />
     </LinearLayout>
 </RelativeLayout>

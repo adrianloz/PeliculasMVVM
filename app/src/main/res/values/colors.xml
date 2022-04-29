@@ -9,4 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="red">#FF313B</color>
     <color name="gris">#FBFBFB</color>
+    <color name="gris_oscuro">#ACA9A9</color>
+    <color name="amarillo">#FFC700</color>
 </resources>
