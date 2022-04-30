@@ -3,7 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/trabajo-smart/Proyectos/PeliculasMVVM/app/src/main/res/drawable-v24/ic_baseline_error_24.xml" value="0.137" />
+        <entry key="..\:/trabajo-smart/Proyectos/PeliculasMVVM/app/src/main/res/drawable/ic_arrow_back.xml" value="0.159" />
+        <entry key="..\:/trabajo-smart/Proyectos/PeliculasMVVM/app/src/main/res/drawable/ic_play_circle.xml" value="0.159" />
+        <entry key="..\:/trabajo-smart/Proyectos/PeliculasMVVM/app/src/main/res/layout/activity_main.xml" value="0.18645833333333334" />
+        <entry key="..\:/trabajo-smart/Proyectos/PeliculasMVVM/app/src/main/res/layout/card_peliculas.xml" value="0.4" />
         <entry key="..\:/trabajo-smart/Proyectos/PeliculasMVVM/app/src/main/res/layout/custom_dialog.xml" value="0.23645833333333333" />
+        <entry key="..\:/trabajo-smart/Proyectos/PeliculasMVVM/app/src/main/res/layout/fragment_detalles.xml" value="0.264" />
+        <entry key="..\:/trabajo-smart/Proyectos/PeliculasMVVM/app/src/main/res/layout/fragment_inicio.xml" value="0.264" />
       </map>
     </option>
   </component>
